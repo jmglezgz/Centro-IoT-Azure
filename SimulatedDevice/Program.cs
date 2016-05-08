@@ -11,8 +11,8 @@ namespace SimulatedDevice
     class Program
     {
         static DeviceClient deviceClient;
-        static string iotHubUri = "CentroIoT01.azure-devices.net";
-        static string deviceKey = "z7ON+py/hxVXFV+HkVkcxRu7/NRmgf/SRATWERNWK54=";
+        static string iotHubUri = "{IoTHubURI}";
+        static string deviceKey = "{Devicekey}";
 
         private static async void SendDeviceToCloudMessagesAsync()
         {
