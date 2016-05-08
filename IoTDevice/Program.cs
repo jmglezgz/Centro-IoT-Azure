@@ -15,7 +15,7 @@ namespace IoTDevice
 
         private static async Task AddDeviceAsync()
         {
-            string deviceId = "MiPrimerDispositivoIoT";
+            string deviceId = "{DeviceName}";
             Device device;
             try
             {
@@ -25,6 +25,7 @@ namespace IoTDevice
             {
                 device = await registryManager.GetDeviceAsync(deviceId);
             }
+            Console.WriteLine("Generated device name: {0}", deviceId);
             Console.WriteLine("Generated device key: {0}", device.Authentication.SymmetricKey.PrimaryKey);
         }
         static void Main(string[] args)
