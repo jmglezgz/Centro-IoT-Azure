@@ -11,11 +11,11 @@ namespace IoTDevice
     class Program
     {
         static RegistryManager registryManager;
-        static string connectionString = "{IoTConnectionString}";
+        static string connectionString = "HostName=CentroIoT01.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=lfFMCmO/RCAsB9AfhMdMgtHp4XMxqNxxob/6WqGmaQU=";
 
         private static async Task AddDeviceAsync()
         {
-            string deviceId = "{DeviceName}";
+            string deviceId = "myFirstDevice";
             Device device;
             try
             {
