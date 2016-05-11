@@ -11,7 +11,7 @@ namespace IoTDevice
     class Program
     {
         static RegistryManager registryManager;
-        static string connectionString = "HostName=CentroIoT01.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=lfFMCmO/RCAsB9AfhMdMgtHp4XMxqNxxob/6WqGmaQU=";
+        static string connectionString = "{IoT connection String}";
 
         private static async Task AddDeviceAsync()
         {
